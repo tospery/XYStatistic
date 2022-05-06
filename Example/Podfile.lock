@@ -1,16 +1,70 @@
 PODS:
-  - XYStatistic (0.1.0)
+  - Alamofire (5.6.1)
+  - Connectivity (5.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (15.0.0):
+    - Moya/Core
+    - RxSwift (~> 6.0)
+  - ObjectMapper-JX (4.2.0-v1)
+  - QMUIKit/QMUICore (4.4.3):
+    - QMUIKit/QMUILog
+    - QMUIKit/QMUIWeakObjectContainer
+  - QMUIKit/QMUILog (4.4.3)
+  - QMUIKit/QMUIWeakObjectContainer (4.4.3)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
+  - SWFrame/Core (2.1.0):
+    - ObjectMapper-JX (= 4.2.0-v1)
+    - QMUIKit/QMUICore (= 4.4.3)
+    - SwifterSwift/SwiftStdlib (= 5.2.0)
+    - SwiftyBeaver (= 1.9.5)
+  - SWFrame/Network (2.1.0):
+    - Connectivity (= 5.0.0)
+    - Moya/RxSwift (= 15.0.0)
+    - RxRelay (= 6.2.0)
+    - SWFrame/Core
+    - SwifterSwift/Foundation (= 5.2.0)
+  - SwifterSwift/Foundation (5.2.0)
+  - SwifterSwift/SwiftStdlib (5.2.0)
+  - SwiftyBeaver (1.9.5)
+  - XYStatistic (1.0.0):
+    - SWFrame/Network (= 2.1.0)
 
 DEPENDENCIES:
   - XYStatistic (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - Connectivity
+    - Moya
+    - ObjectMapper-JX
+    - QMUIKit
+    - RxRelay
+    - RxSwift
+    - SWFrame
+    - SwifterSwift
+    - SwiftyBeaver
 
 EXTERNAL SOURCES:
   XYStatistic:
     :path: "../"
 
 SPEC CHECKSUMS:
-  XYStatistic: 8c570b0e44dd7ad0d22b83fa707917e98cea39d9
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  Connectivity: e990703fb8d8db54649ea05facac92000cc0f3eb
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  ObjectMapper-JX: 6192e0fef1cf50f566ca9e4a1c3d28f884beb121
+  QMUIKit: 5da6e59d5d312681ee45706af42fd3af7b4f55eb
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  SWFrame: e04c853871a49ba347258e7867d3c86f7bf9af4e
+  SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
+  SwiftyBeaver: 84069991dd5dca07d7069100985badaca7f0ce82
+  XYStatistic: 9422e227428fcd84ea25b5550174c767b7ee688f
 
-PODFILE CHECKSUM: 510d84bcc90e32bb268fd89064f822af57212fa4
+PODFILE CHECKSUM: 520a18d2a207facbb472708d278131469af87315
 
 COCOAPODS: 1.11.2

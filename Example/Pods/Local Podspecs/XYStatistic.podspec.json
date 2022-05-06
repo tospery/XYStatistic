@@ -1,22 +1,31 @@
 {
   "name": "XYStatistic",
-  "version": "0.1.0",
-  "summary": "A short description of XYStatistic.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/yangjianxiang/XYStatistic",
+  "version": "1.0.0",
+  "summary": "XY Statistic",
+  "description": "XY Statistic for iOS",
+  "homepage": "https://github.com/tospery/XYStatistic",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "yangjianxiang": "yangjianxiang@xunyou.com"
+    "YangJianxiang": "tospery@gmail.com"
   },
   "source": {
-    "git": "https://github.com/yangjianxiang/XYStatistic.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/tospery/XYStatistic.git",
+    "tag": "1.0.0"
   },
+  "requires_arc": true,
+  "swift_versions": "5.0",
   "platforms": {
-    "ios": "9.0"
+    "ios": "11.0"
   },
-  "source_files": "XYStatistic/Classes/**/*"
+  "frameworks": "Foundation",
+  "source_files": "XYStatistic/**/*",
+  "dependencies": {
+    "SWFrame/Network": [
+      "2.1.0"
+    ]
+  },
+  "swift_version": "5.0"
 }
