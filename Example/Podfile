@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'XYStatistic_Example' do
+  pod 'XYStatistic', :path => '../'
+
+  target 'XYStatistic_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

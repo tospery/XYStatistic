@@ -1,0 +1,16 @@
+PODS:
+  - XYStatistic (0.1.0)
+
+DEPENDENCIES:
+  - XYStatistic (from `../`)
+
+EXTERNAL SOURCES:
+  XYStatistic:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XYStatistic: 8c570b0e44dd7ad0d22b83fa707917e98cea39d9
+
+PODFILE CHECKSUM: 510d84bcc90e32bb268fd89064f822af57212fa4
+
+COCOAPODS: 1.11.2

@@ -1,0 +1,6 @@
+framework module Pods_XYStatistic_Example {
+  umbrella header "Pods-XYStatistic_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

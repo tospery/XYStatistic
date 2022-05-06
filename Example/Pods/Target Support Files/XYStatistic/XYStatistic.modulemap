@@ -1,0 +1,6 @@
+framework module XYStatistic {
+  umbrella header "XYStatistic-umbrella.h"
+
+  export *
+  module * { export * }
+}
