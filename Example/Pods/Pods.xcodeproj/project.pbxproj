@@ -320,7 +320,9 @@
 		8BF9C330EA2EAC8A737FF3EFF043DD60 /* ConnectivityPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCB1DB4BBEF32C071550EA11191D224 /* ConnectivityPublisher.swift */; };
 		8C40379F8599C804313C02AEEEFF8145 /* NotificationNameAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F27C6C20CF51D52CAFF60960A9A3B6C /* NotificationNameAdditions.swift */; };
 		8C5972BA2824F41300515FBE /* XYStatistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5972B92824F41300515FBE /* XYStatistic.swift */; };
-		8C5972BD2825020600515FBE /* XYResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5972BC2825020600515FBE /* XYResponse.swift */; };
+		8C5972BD2825020600515FBE /* XYStatsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5972BC2825020600515FBE /* XYStatsResponse.swift */; };
+		8C5972C22825197900515FBE /* XYStatsUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5972C12825197900515FBE /* XYStatsUser.swift */; };
+		8C5972C4282519A500515FBE /* XYStatsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5972C3282519A500515FBE /* XYStatsEvent.swift */; };
 		8CE7BD74DED3BC8880AC2556BF0F59CD /* Using.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43908322D808B5FCFC0BD9E48ECEA69B /* Using.swift */; };
 		8CF30E45F68813C74C39193C63E3E626 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2AFB9535BE39226C26A9CE08FFFD9A /* TargetType.swift */; };
 		8D50CCB6659E711D947E9B39DFD8E68F /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9DC662E8BF361F7435D3C3064F7BD1 /* Range.swift */; };
@@ -1012,7 +1014,9 @@
 		8BCEE2B3B1D456850FF44C4240DF7364 /* Endpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endpoint.swift; path = Sources/Moya/Endpoint.swift; sourceTree = "<group>"; };
 		8C3EBD90EFD806A5C14E279674F79690 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		8C5972B92824F41300515FBE /* XYStatistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = XYStatistic.swift; path = XYStatistic/XYStatistic.swift; sourceTree = "<group>"; };
-		8C5972BC2825020600515FBE /* XYResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = XYResponse.swift; path = XYStatistic/XYResponse.swift; sourceTree = "<group>"; };
+		8C5972BC2825020600515FBE /* XYStatsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = XYStatsResponse.swift; path = XYStatistic/XYStatsResponse.swift; sourceTree = "<group>"; };
+		8C5972C12825197900515FBE /* XYStatsUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = XYStatsUser.swift; path = XYStatistic/XYStatsUser.swift; sourceTree = "<group>"; };
+		8C5972C3282519A500515FBE /* XYStatsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = XYStatsEvent.swift; path = XYStatistic/XYStatsEvent.swift; sourceTree = "<group>"; };
 		8C81A3F6D6E88BB13C101D6462262715 /* SwifterSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwifterSwift; path = SwifterSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C940D91FBFEF7BAEDC809C13BE6DFC3 /* SwiftyBeaver-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyBeaver-prefix.pch"; sourceTree = "<group>"; };
 		8CDF4D6BAE24593B9B01415443503342 /* VirtualTimeConverterType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VirtualTimeConverterType.swift; path = RxSwift/Schedulers/VirtualTimeConverterType.swift; sourceTree = "<group>"; };
@@ -1418,7 +1422,9 @@
 				3B72DFF7F0521DEADF0A2E13A42BC2B1 /* Pod */,
 				C155C6F3C3E6C57C2560D4AA75F582C5 /* Support Files */,
 				8C5972B92824F41300515FBE /* XYStatistic.swift */,
-				8C5972BC2825020600515FBE /* XYResponse.swift */,
+				8C5972BC2825020600515FBE /* XYStatsResponse.swift */,
+				8C5972C12825197900515FBE /* XYStatsUser.swift */,
+				8C5972C3282519A500515FBE /* XYStatsEvent.swift */,
 			);
 			name = XYStatistic;
 			path = ../..;
@@ -3347,8 +3353,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C5972BA2824F41300515FBE /* XYStatistic.swift in Sources */,
-				8C5972BD2825020600515FBE /* XYResponse.swift in Sources */,
+				8C5972BD2825020600515FBE /* XYStatsResponse.swift in Sources */,
 				91A747257CB12A849B4ACC810DC23266 /* XYStatistic-dummy.m in Sources */,
+				8C5972C4282519A500515FBE /* XYStatsEvent.swift in Sources */,
+				8C5972C22825197900515FBE /* XYStatsUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

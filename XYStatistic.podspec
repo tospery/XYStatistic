@@ -19,5 +19,6 @@ Pod::Spec.new do |s|
   s.frameworks = 'Foundation'
   s.source_files = 'XYStatistic/**/*'
   
-  s.dependency 'SWFrame/Network', '2.1.0'
+  s.dependency 'SWFrame/Core', '2.1.1'
+  s.dependency "Alamofire", "~> 5.0"
 end

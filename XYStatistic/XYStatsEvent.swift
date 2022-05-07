@@ -1,5 +1,5 @@
 //
-//  XYResponse.swift
+//  XYStatsEvent.swift
 //  XYStatistic
 //
 //  Created by liaoya on 2022/5/6.
@@ -9,7 +9,7 @@ import Foundation
 import ObjectMapper_JX
 import SWFrame
 
-struct XYResponse: ModelType, Decodable {
+public struct XYStatsEvent: ModelType {
 
     var code = 0
     var message: String?
