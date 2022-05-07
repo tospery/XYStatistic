@@ -6,15 +6,17 @@
 //
 
 import Foundation
-import Alamofire
 import ObjectMapper_JX
 import SwifterSwift
 import SWFrame
+import Alamofire
 
 final public class XYStatistic {
     
     var propertiesAPI = ""
     var eventAPI = ""
+    var user = XYStatsUser.init()
+    var event = XYStatsEvent.init()
     public static let shared = XYStatistic()
     
     public init() {
@@ -30,10 +32,15 @@ final public class XYStatistic {
             logger.print("未设置propertiesAPI！！！")
             return
         }
-        let parameters: [String: String] = [
-            "cookie_id": "abc123",
-            "uid": userId ?? "0"
+        self.user = user
+        self.event = event
+        
+        var parameters: [String: String] = [
+            "cookie_id": UIDevice.current.uuid
         ]
+        parameters += user.toJSON().mapValues { String(describing:$0) }
+        parameters += event.toJSON().mapValues { String(describing:$0) }
+        
         AF.request(
             self.propertiesAPI,
             method: .post,

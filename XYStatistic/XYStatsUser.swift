@@ -11,17 +11,17 @@ import SWFrame
 
 public struct XYStatsUser: ModelType {
 
-    var uid = "0"
+    var id = "0"
     var winType = 4
 
-    init() {
+    public init() {
     }
 
-    init?(map: Map) {
+    public init?(map: Map) {
     }
 
-    mutating func mapping(map: Map) {
-        uid         <- map["uid"]
+    mutating public func mapping(map: Map) {
+        id          <- map["uid"]
         winType     <- map["win_type"]
     }
 

@@ -23,8 +23,11 @@
   "frameworks": "Foundation",
   "source_files": "XYStatistic/**/*",
   "dependencies": {
-    "SWFrame/Network": [
-      "2.1.0"
+    "SWFrame/Core": [
+      "2.1.2"
+    ],
+    "Alamofire": [
+      "~> 5.0"
     ]
   },
   "swift_version": "5.0"

@@ -14,13 +14,13 @@ public struct XYStatsEvent: ModelType {
     var code = 0
     var message: String?
 
-    init() {
+    public init() {
     }
 
-    init?(map: Map) {
+    public init?(map: Map) {
     }
 
-    mutating func mapping(map: Map) {
+    mutating public func mapping(map: Map) {
         code       <- map["code"]
         message    <- map["message"]
     }
