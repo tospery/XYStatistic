@@ -178,11 +178,12 @@
 		89F8A28A13FF63ED8580557ADAB93CD3 /* UISearchBar+QMUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CDA258D42C5C3E917C6BB2262FF117 /* UISearchBar+QMUI.m */; };
 		8A8C9C6E7618A5FF0D3BE930F51CF8D1 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74FD8A04191F8AC9367BE3923FFC27 /* Filter.swift */; };
 		8B644345D972A3DF5173087848AB77E1 /* SWHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB981BC0BFE4A246B7080DCB490A430 /* SWHelper.m */; };
+		8CAC204C28409079003022F0 /* XYStatsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAC204B28409079003022F0 /* XYStatsEvent.swift */; };
 		8D75FC8D7476C9674234F39F1A820D8C /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6A91A2296D62FE73D0C92492DBC2BF /* URLConvertible+URLRequestConvertible.swift */; };
 		8E878C604D40BD098572E76CB6B14C76 /* EdgeInsetsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEC505C3BB56211D3E5426945D6023E /* EdgeInsetsExtensions.swift */; };
 		8F1B66A139EE8154B23AE1E2A825F9C4 /* QMUILab.h in Headers */ = {isa = PBXBuildFile; fileRef = 7262A2E14FE99EB8F4F2815199FFD589 /* QMUILab.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F6556E2725BEDF0DF3D454B0346B7AB /* XYStatistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D443786064C4BBEC9965AE987F331F23 /* XYStatistic.swift */; };
-		908EFEDA54A7930DD9D80ACAF2BBE34B /* XYStatsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B371C3F5BB34166459D24EAD0DFE7F1 /* XYStatsEvent.swift */; };
+		908EFEDA54A7930DD9D80ACAF2BBE34B /* XYStatsPropertyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B371C3F5BB34166459D24EAD0DFE7F1 /* XYStatsPropertyEvent.swift */; };
 		90D1411C418975EE9C390AA42B1C98A8 /* NSParagraphStyle+QMUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F98B84C372F3972D8C3B9C1BAD31474E /* NSParagraphStyle+QMUI.m */; };
 		918E6A3CD464F504C02DA50A90170151 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5FD8118893F9DAD52BD77540FFAAA3 /* Operators.swift */; };
 		918E7DA28B49008C6CFCBF667F15CF67 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7343271C878EF4FF0B72A572E11A86 /* Security.framework */; };
@@ -270,7 +271,7 @@
 		D87F3C7240AFFDD6D07442C430823B10 /* IntegerOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F67D14B7C466F66106C8A39A180654 /* IntegerOperators.swift */; };
 		D948161949E46EB7EAD831A66A0D8853 /* NSCharacterSet+QMUI.h in Headers */ = {isa = PBXBuildFile; fileRef = CD36767213F4D6546D8F31B7999FABAB /* NSCharacterSet+QMUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D960B5737432A8A2C392EA36C6E6F0E0 /* DataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6964FD897F3EC06A71BD8B21923DBF69 /* DataTransform.swift */; };
-		DA2437D7BA422DC31AB4277E941FF295 /* XYStatsUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1176F9F4F496E01CED0B7D6C4507556E /* XYStatsUser.swift */; };
+		DA2437D7BA422DC31AB4277E941FF295 /* XYStatsPropertyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1176F9F4F496E01CED0B7D6C4507556E /* XYStatsPropertyUser.swift */; };
 		DA34899BEF0668D76CBCE8C4CE47B97B /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9EA8C434B8A622C2D5C302406AE6DB /* RequestTaskMap.swift */; };
 		DA8478688A974798CDB1F491CF4AF65A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C564EC6B129F877DF02F49604A17BF /* Foundation.framework */; };
 		DB0DAE5E8B9E2F19096B9399930423F9 /* SwiftyBeaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90774B60EFB3FEF9040BAF9A7844417C /* SwiftyBeaver.swift */; };
@@ -456,11 +457,11 @@
 		0CDD59F2DCB2793F2512479C4BEF42A9 /* QMUILogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QMUILogger.h; path = QMUIKit/QMUIComponents/QMUILog/QMUILogger.h; sourceTree = "<group>"; };
 		0D5B0507F0025B774CB1AF9F02CF76F1 /* QMUIRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QMUIRuntime.h; path = QMUIKit/QMUICore/QMUIRuntime.h; sourceTree = "<group>"; };
 		0E4A8A99078418D75473D0EC22E494F2 /* NSNumber+QMUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+QMUI.h"; path = "QMUIKit/UIKitExtensions/NSNumber+QMUI.h"; sourceTree = "<group>"; };
-		0F8B73A874BCBAA500AD5E21583D74BF /* XYStatistic.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XYStatistic.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0F8B73A874BCBAA500AD5E21583D74BF /* XYStatistic.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = XYStatistic.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0FA94E95E4E344F34F344094BD1FD064 /* QMUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QMUIKit-prefix.pch"; sourceTree = "<group>"; };
 		0FB1BFAE51E5EF73B4FB4632E22DDCAA /* Storable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Storable.swift; path = SWFrame/Core/Storable.swift; sourceTree = "<group>"; };
 		1136A0D317BD760C85B3BF9A0868AC34 /* ObjectMapper-JX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "ObjectMapper-JX.debug.xcconfig"; sourceTree = "<group>"; };
-		1176F9F4F496E01CED0B7D6C4507556E /* XYStatsUser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XYStatsUser.swift; path = XYStatistic/XYStatsUser.swift; sourceTree = "<group>"; };
+		1176F9F4F496E01CED0B7D6C4507556E /* XYStatsPropertyUser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XYStatsPropertyUser.swift; path = XYStatistic/XYStatsPropertyUser.swift; sourceTree = "<group>"; };
 		11D1C9881E02AD215837ABA88C5315DE /* UINavigationBar+QMUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+QMUI.m"; path = "QMUIKit/UIKitExtensions/UINavigationBar+QMUI.m"; sourceTree = "<group>"; };
 		12662BDC318ADD54B15908FE074FEA73 /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
 		126A6B90A2FC726993D8CDB1FF36ED8A /* BinaryFloatingPointExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryFloatingPointExtensions.swift; path = Sources/SwifterSwift/SwiftStdlib/BinaryFloatingPointExtensions.swift; sourceTree = "<group>"; };
@@ -512,7 +513,7 @@
 		3152CEEE0293A96E68192979FB64104F /* ColorExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorExtensions.swift; path = Sources/SwifterSwift/Shared/ColorExtensions.swift; sourceTree = "<group>"; };
 		33294B9987D99314A6F7636A2D4ED9F2 /* UIDevice+Core.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDevice+Core.swift"; path = "SWFrame/Core/Ex/UIDevice+Core.swift"; sourceTree = "<group>"; };
 		332F5080B6F0D1AC5B289A6E9997972F /* UICKeyChainStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICKeyChainStore.release.xcconfig; sourceTree = "<group>"; };
-		33FAF35B90FE8B7B17B4D1E82898DF74 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		33FAF35B90FE8B7B17B4D1E82898DF74 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		34D742132FFF81AE1D223BCBBCEBE6C1 /* NSAttributedString+QMUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+QMUI.m"; path = "QMUIKit/UIKitExtensions/NSAttributedString+QMUI.m"; sourceTree = "<group>"; };
 		359B1850F5D246F2A1E8E0F70ABD8C46 /* CGRect+Core.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGRect+Core.swift"; path = "SWFrame/Core/Ex/CGRect+Core.swift"; sourceTree = "<group>"; };
 		37863F04E9A97FB6EAF846B9A0875656 /* UIGestureRecognizer+QMUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIGestureRecognizer+QMUI.h"; path = "QMUIKit/UIKitExtensions/UIGestureRecognizer+QMUI.h"; sourceTree = "<group>"; };
@@ -585,7 +586,7 @@
 		6964FD897F3EC06A71BD8B21923DBF69 /* DataTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataTransform.swift; path = Sources/DataTransform.swift; sourceTree = "<group>"; };
 		6A017DC2EAA483001A88B4E49C3AD63C /* UIBlurEffect+QMUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBlurEffect+QMUI.h"; path = "QMUIKit/UIKitExtensions/UIBlurEffect+QMUI.h"; sourceTree = "<group>"; };
 		6ABE5AEB8B647AF1DE8515C076D13AAA /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
-		6B371C3F5BB34166459D24EAD0DFE7F1 /* XYStatsEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XYStatsEvent.swift; path = XYStatistic/XYStatsEvent.swift; sourceTree = "<group>"; };
+		6B371C3F5BB34166459D24EAD0DFE7F1 /* XYStatsPropertyEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XYStatsPropertyEvent.swift; path = XYStatistic/XYStatsPropertyEvent.swift; sourceTree = "<group>"; };
 		6B96A7F3D6B6CE8AE24EDD9D624BE63A /* QMUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QMUIKit.release.xcconfig; sourceTree = "<group>"; };
 		6B9953FBC843E7F66517054D1A803A88 /* UISlider+QMUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISlider+QMUI.h"; path = "QMUIKit/UIKitExtensions/UISlider+QMUI.h"; sourceTree = "<group>"; };
 		6D284B207B73B311088AE182213B174F /* QMUILog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QMUILog.h; path = QMUIKit/QMUIComponents/QMUILog/QMUILog.h; sourceTree = "<group>"; };
@@ -648,6 +649,7 @@
 		8C28DBFB3495BAA1212A68E283B94AF9 /* UIViewController+QMUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+QMUI.m"; path = "QMUIKit/UIKitExtensions/UIViewController+QMUI.m"; sourceTree = "<group>"; };
 		8C81A3F6D6E88BB13C101D6462262715 /* SwifterSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwifterSwift; path = SwifterSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C97E0C13271F26B95822BD68BDC569F /* QMUIConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QMUIConfiguration.m; path = QMUIKit/QMUICore/QMUIConfiguration.m; sourceTree = "<group>"; };
+		8CAC204B28409079003022F0 /* XYStatsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = XYStatsEvent.swift; path = XYStatistic/XYStatsEvent.swift; sourceTree = "<group>"; };
 		8D07683893BA2BCE2D0FDA41EB21B3AB /* UICKeyChainStore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICKeyChainStore-prefix.pch"; sourceTree = "<group>"; };
 		8DF5BC70176EF33062F6BCFE902999E7 /* UIBlurEffect+QMUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBlurEffect+QMUI.m"; path = "QMUIKit/UIKitExtensions/UIBlurEffect+QMUI.m"; sourceTree = "<group>"; };
 		8EF20969E933A7D35BE8F7851B6308B1 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
@@ -673,7 +675,7 @@
 		9B5AA801EF87C4BD03042C5B625BAFB7 /* SWError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SWError.swift; path = SWFrame/Core/SWError.swift; sourceTree = "<group>"; };
 		9BA79598F150EEBA91ADB78FD5E8CAB8 /* UICKeyChainStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICKeyChainStore.debug.xcconfig; sourceTree = "<group>"; };
 		9CB74C94AD57DAEA195399DCB33BE471 /* QMUIConfigurationMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QMUIConfigurationMacros.h; path = QMUIKit/QMUICore/QMUIConfigurationMacros.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E91E2A1592701A02C085CE7E3B2F2C2 /* UICollectionViewCell+QMUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionViewCell+QMUI.m"; path = "QMUIKit/UIKitExtensions/UICollectionViewCell+QMUI.m"; sourceTree = "<group>"; };
 		9EF8C93C5985794A5CAE44B02710E344 /* QMUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QMUIKit.debug.xcconfig; sourceTree = "<group>"; };
 		9F7343271C878EF4FF0B72A572E11A86 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
@@ -740,7 +742,7 @@
 		CDF5C80C738D6487F98B83A3ADBCF9DF /* ConsoleDestination.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConsoleDestination.swift; path = Sources/ConsoleDestination.swift; sourceTree = "<group>"; };
 		CE6A91A2296D62FE73D0C92492DBC2BF /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
 		CF7DD1163E35FECF0F10080B0D41CCB0 /* XYStatistic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XYStatistic.modulemap; sourceTree = "<group>"; };
-		CFB6CE6CBC9F6E3374990E1D08EC8D78 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		CFB6CE6CBC9F6E3374990E1D08EC8D78 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D0B71EFCE8A943629FDAF27D5CF175E2 /* Data+Core.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Core.swift"; path = "SWFrame/Core/Ex/Data+Core.swift"; sourceTree = "<group>"; };
 		D0F75A6757EBD3961087A18EAF9D730E /* QMUIConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QMUIConfiguration.h; path = QMUIKit/QMUICore/QMUIConfiguration.h; sourceTree = "<group>"; };
 		D12F307D6520D9E8C9F79E2701BDBFCC /* NSString+QMUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+QMUI.h"; path = "QMUIKit/UIKitExtensions/NSString+QMUI.h"; sourceTree = "<group>"; };
@@ -963,7 +965,6 @@
 				BE8A51CC2DBA910CA7AB2FFFC14EFB46 /* URLTransform.swift */,
 				5A80D5B4A5F9F633EA11A50CA426E253 /* Support Files */,
 			);
-			name = "ObjectMapper-JX";
 			path = "ObjectMapper-JX";
 			sourceTree = "<group>";
 		};
@@ -983,7 +984,6 @@
 				90774B60EFB3FEF9040BAF9A7844417C /* SwiftyBeaver.swift */,
 				76EB066549B1552D8616F80D365014B0 /* Support Files */,
 			);
-			name = SwiftyBeaver;
 			path = SwiftyBeaver;
 			sourceTree = "<group>";
 		};
@@ -1025,7 +1025,6 @@
 				7FD179BB383E7DD724A5719AA2DF95FC /* Core */,
 				DA05E7C5BE2E43D14A1AE6A107A24F71 /* Support Files */,
 			);
-			name = SWFrame;
 			path = SWFrame;
 			sourceTree = "<group>";
 		};
@@ -1146,7 +1145,6 @@
 				441FA46A655D4A0F0411CB6DD291DC7C /* UICKeyChainStore.m */,
 				9392E5A1017AB0283398F117A25B5A01 /* Support Files */,
 			);
-			name = UICKeyChainStore;
 			path = UICKeyChainStore;
 			sourceTree = "<group>";
 		};
@@ -1230,7 +1228,6 @@
 				9A38917F329E1CBEC1C6C6C9E865AE48 /* QMUIWeakObjectContainer */,
 				BB86C8F250D49938FBEF5FC0B268230F /* Support Files */,
 			);
-			name = QMUIKit;
 			path = QMUIKit;
 			sourceTree = "<group>";
 		};
@@ -1255,7 +1252,6 @@
 				47FBEDDC0146708750307D694069D2A4 /* Support Files */,
 				2B6DE84C657B6D9672BB7663F82F742D /* SwiftStdlib */,
 			);
-			name = SwifterSwift;
 			path = SwifterSwift;
 			sourceTree = "<group>";
 		};
@@ -1445,7 +1441,6 @@
 				086A52E5BC25C4BD623F563D41214000 /* UIDevice+FCUUID.m */,
 				3F2296584B73C27346B38FC5F641D380 /* Support Files */,
 			);
-			name = FCUUID;
 			path = FCUUID;
 			sourceTree = "<group>";
 		};
@@ -1453,11 +1448,12 @@
 			isa = PBXGroup;
 			children = (
 				D443786064C4BBEC9965AE987F331F23 /* XYStatistic.swift */,
-				6B371C3F5BB34166459D24EAD0DFE7F1 /* XYStatsEvent.swift */,
+				6B371C3F5BB34166459D24EAD0DFE7F1 /* XYStatsPropertyEvent.swift */,
 				E9488FDA38B518E69CC5CD80D99AC760 /* XYStatsResponse.swift */,
-				1176F9F4F496E01CED0B7D6C4507556E /* XYStatsUser.swift */,
+				1176F9F4F496E01CED0B7D6C4507556E /* XYStatsPropertyUser.swift */,
 				5C78557F6687C9F408C38B36E1004E3B /* Pod */,
 				4A9D5AF0CC3BDFF76ECA322F24B66C85 /* Support Files */,
+				8CAC204B28409079003022F0 /* XYStatsEvent.swift */,
 			);
 			name = XYStatistic;
 			path = ../..;
@@ -1539,7 +1535,6 @@
 				FDE62F94FE38702AAC28FFB2E8C39769 /* Validation.swift */,
 				0ADB55ECD9A1D85E6212E86DF52EFE93 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -2186,9 +2181,10 @@
 			files = (
 				8F6556E2725BEDF0DF3D454B0346B7AB /* XYStatistic.swift in Sources */,
 				88938993F1E65FAE93E1EF9080FFF621 /* XYStatistic-dummy.m in Sources */,
-				908EFEDA54A7930DD9D80ACAF2BBE34B /* XYStatsEvent.swift in Sources */,
+				908EFEDA54A7930DD9D80ACAF2BBE34B /* XYStatsPropertyEvent.swift in Sources */,
+				8CAC204C28409079003022F0 /* XYStatsEvent.swift in Sources */,
 				45A5E06A27926798BF75857F5379CA4B /* XYStatsResponse.swift in Sources */,
-				DA2437D7BA422DC31AB4277E941FF295 /* XYStatsUser.swift in Sources */,
+				DA2437D7BA422DC31AB4277E941FF295 /* XYStatsPropertyUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2872,8 +2868,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
