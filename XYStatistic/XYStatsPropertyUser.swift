@@ -10,12 +10,12 @@ import ObjectMapper_JX
 import SWFrame
 import QMUIKit
 
-public struct XYStatsPropertyUser: ModelType {
+public struct XYStatsPropertyUser: ModelType, Codable {
 
     // 外部设置的属性
-    var id = "0"
-    var promotionId = ""
-    var spId = ""
+    public var id = "0"
+    public var promotionId = ""
+    public var spId = ""
     // 固定不变的属性
     var winType = 0
     var cookieId = UIDevice.current.uuid.nsString.qmui_md5

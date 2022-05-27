@@ -33,33 +33,33 @@ final public class XYStatistic {
             return
         }
         self.user = user
-        let parameters = user.toJSON().mapValues { String(describing:$0) }
+        let parameters = user.toJSON()
         AF.request(
             self.propertyAPI,
             method: .post,
             parameters: parameters,
-            encoder: JSONParameterEncoder.default
+            encoding: JSONEncoding.default
         )
-            .validate()
-            .responseDecodable(of: XYStatsResponse.self) { response in
-                switch response.result {
-                case let .success(xy):
-                    if xy.code != 0 {
-                        logger.print("上报错误（update）: \(xy.message ?? "")", module: .statistic)
-                    }
-                case let .failure(error):
-                    logger.print("发生错误（update）: \(error)", module: .statistic)
+        .validate()
+        .responseDecodable(of: XYStatsResponse.self) { response in
+            switch response.result {
+            case let .success(xy):
+                if xy.code != 0 {
+                    logger.print("上报错误（update）: \(xy.message ?? "")", module: .statistic)
                 }
+            case let .failure(error):
+                logger.print("发生错误（update）: \(error)", module: .statistic)
             }
+        }
     }
     
     public func update(event: XYStatsPropertyEvent) {
         self.event = event
     }
-    
+     
     public func trackEvent(_ event: XYStatsEvent, _ customInfo: [String: String]? = nil) {
         guard !self.eventAPI.isEmpty else {
-            logger.print("未设置eventAPI！！！")
+            logger.print("未设置eventAPI！！！", module: .statistic)
             return
         }
         var parameters = event.properties
