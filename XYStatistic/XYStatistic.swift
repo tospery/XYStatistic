@@ -34,6 +34,7 @@ final public class XYStatistic {
         }
         self.user = user
         let parameters = user.toJSON()
+        
         AF.request(
             self.propertyAPI,
             method: .post,
@@ -45,10 +46,12 @@ final public class XYStatistic {
             switch response.result {
             case let .success(xy):
                 if xy.code != 0 {
-                    logger.print("上报错误（update）: \(xy.message ?? "")", module: .statistic)
+                    logger.print("上报失败（user）: \(xy.message ?? "")", module: .statistic)
+                } else {
+                    logger.print(parameters.jsonString() ?? "", module: .statistic)
                 }
             case let .failure(error):
-                logger.print("发生错误（update）: \(error)", module: .statistic)
+                logger.print("上报错误（user）: \(error)", module: .statistic)
             }
         }
     }
@@ -57,34 +60,38 @@ final public class XYStatistic {
         self.event = event
     }
      
-    public func trackEvent(_ event: XYStatsEvent, _ customInfo: [String: String]? = nil) {
+    public func trackEvent(_ event: XYStatsEvent, _ customInfo: [String: Any]? = nil) {
         guard !self.eventAPI.isEmpty else {
             logger.print("未设置eventAPI！！！", module: .statistic)
             return
         }
         var parameters = event.properties
-        parameters += self.event.toJSON().mapValues { String(describing:$0) }
+        parameters += self.event.toJSON()
         if let customInfo = customInfo {
             parameters += customInfo
         }
         
-        AF.request(
-            self.eventAPI,
-            method: .post,
-            parameters: parameters,
-            encoder: JSONParameterEncoder.default
-        )
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            AF.request(
+                self.eventAPI,
+                method: .post,
+                parameters: parameters,
+                encoding: JSONEncoding.default
+            )
             .validate()
             .responseDecodable(of: XYStatsResponse.self) { response in
                 switch response.result {
                 case let .success(xy):
                     if xy.code != 0 {
-                        logger.print("上报错误（trackEvent）: \(xy.message ?? "")", module: .statistic)
+                        logger.print("上报失败（event）: \(xy.message ?? "")", module: .statistic)
+                    } else {
+                        logger.print(parameters.jsonString() ?? "", module: .statistic)
                     }
                 case let .failure(error):
-                    logger.print("发生错误（trackEvent）: \(error)", module: .statistic)
+                    logger.print("上报错误（event）: \(error)", module: .statistic)
                 }
             }
+        }
     }
     
 }

@@ -11,20 +11,20 @@ import SWFrame
 
 public struct XYStatsPropertyEvent: ModelType {
     // 外部设置的属性
-    var uid = "0"
-    var versionId = "NA"
-    var signInStatus = "NA"
-    var loginMode = "NA"
-    var loginChannel = "NA"
-    var isVip = "NA"
-    var isVipType = "NA"
-    var memebershipRemainingTime = "NA"
-    var accStatus = "NA"
-    var accType = "NA"
-    var rengionId = "NA"
-    var serverId = "NA"
-    var nodeId = "NA"
-    var gameId = "NA"
+    public var uid = "0"
+    public var versionId = "N/A"
+    public var signInStatus = 0
+    public var loginMode = 0
+    public var loginChannel = 0
+    public var isVip = 0
+    public var isVipType = [0]
+    public var memebershipRemainingTime = 0
+    public var accStatus = 0
+    public var accType = 0
+    public var rengionId = "N/A"
+    public var serverId = "N/A"
+    public var nodeId = "N/A"
+    public var gameId = "N/A"
     // 固定不变的属性
     var cookieId = UIDevice.current.uuid.nsString.qmui_md5
     var deviceId = UIDevice.current.uuid.nsString.qmui_md5
