@@ -26,6 +26,7 @@ public struct XYStatsPropertyEvent: ModelType {
     public var nodeId = "N/A"
     public var gameId = "N/A"
     // 固定不变的属性
+    var accMode = 4
     var cookieId = UIDevice.current.uuid.nsString.qmui_md5
     var deviceId = UIDevice.current.uuid.nsString.qmui_md5
     var deviceType = "iPhone"
@@ -60,6 +61,7 @@ public struct XYStatsPropertyEvent: ModelType {
         serverId                    <- map["server_id"]
         nodeId                      <- map["node_id"]
         gameId                      <- map["game_id"]
+        accMode                     <- map["acc_mode"]
     }
 
 }

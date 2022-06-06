@@ -41,7 +41,6 @@ final public class XYStatistic {
         
         self.queue.addOperation {
             self.lock.lock()
-            logger.print("update线程: \(Thread.current)开始", module: .statistic)
             AF.request(
                 self.propertyAPI,
                 method: .post,
@@ -60,7 +59,6 @@ final public class XYStatistic {
                 case let .failure(error):
                     logger.print("上报错误（user）: \(error)", module: .statistic)
                 }
-                logger.print("update线程: \(Thread.current)结束", module: .statistic)
                 self.lock.unlock()
             }
         }
@@ -80,7 +78,6 @@ final public class XYStatistic {
         
         self.queue.addOperation {
             self.lock.lock()
-            logger.print("trackEvent线程: \(Thread.current)开始", module: .statistic)
             AF.request(
                 self.eventAPI,
                 method: .post,
@@ -99,7 +96,6 @@ final public class XYStatistic {
                 case let .failure(error):
                     logger.print("上报错误（event）: \(error)", module: .statistic)
                 }
-                logger.print("trackEvent线程: \(Thread.current)结束", module: .statistic)
                 self.lock.unlock()
             }
         }
