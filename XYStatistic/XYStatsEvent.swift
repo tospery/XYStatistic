@@ -76,7 +76,7 @@ public enum XYStatsEvent {
             ]
         case let .phoneAccelerate(page, feature, content):
             parameters += [
-                "x_event_id": "r_updata",
+                "x_event_id": "r_mobile_acc",
                 "x_page": page.rawValue,
                 "x_source": "iosapp",
                 "x_feature": feature.rawValue,
