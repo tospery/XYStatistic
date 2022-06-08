@@ -29,7 +29,7 @@ public struct XYStatsPropertyEvent: ModelType {
     var accMode = 4
     var cookieId = UIDevice.current.uuid.nsString.qmui_md5
     var deviceId = UIDevice.current.uuid.nsString.qmui_md5
-    var deviceType = "iPhone"
+    var deviceType = 3
     var deviceVendors = "Apple"
     var deviceModel = QMUIHelper.deviceModel
     var deviceVersion = UIDevice.current.systemVersion

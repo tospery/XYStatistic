@@ -68,7 +68,7 @@ final public class XYStatistic {
         self.event = event
     }
      
-    public func trackEvent(_ event: XYStatsEvent) {
+    public func trackEvent(_ event: XYStatsEvent, completion: (() -> Void)? = nil) {
         guard !self.eventAPI.isEmpty else {
             logger.print("未设置eventAPI！！！", module: .statistic)
             return
@@ -97,6 +97,7 @@ final public class XYStatistic {
                     logger.print("上报错误（event）: \(error)", module: .statistic)
                 }
                 self.lock.unlock()
+                completion?()
             }
         }
     }
