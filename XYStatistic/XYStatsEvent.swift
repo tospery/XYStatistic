@@ -56,7 +56,7 @@ public enum XYStatsEvent {
             ]
         case let .pluginUpdate(feature, content):
             parameters += [
-                "x_event_id": "r_updata",
+                "x_event_id": "r_update",
                 "x_feature": feature.rawValue,
                 "x_content": content
             ]
