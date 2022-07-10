@@ -20,10 +20,18 @@ final public class XYStatistic {
     var datas = [[String : Any]].init()
     let queue = OperationQueue()
     let lock = NSLock.init()
+    let session: Session!
     public static let shared = XYStatistic()
     
     public init() {
         self.queue.maxConcurrentOperationCount = 1
+        self.session = Session(
+            serverTrustManager: ServerTrustManager(
+                evaluators: [
+                    "ms.xunyou.com":DisabledTrustEvaluator()
+                ]
+            )
+        )
     }
     
     public func initialize(propertyAPI: String, eventAPI: String) {
@@ -41,7 +49,7 @@ final public class XYStatistic {
         
         self.queue.addOperation {
             self.lock.lock()
-            AF.request(
+            self.session.request(
                 self.propertyAPI,
                 method: .post,
                 parameters: parameters,
@@ -78,7 +86,7 @@ final public class XYStatistic {
         
         self.queue.addOperation {
             self.lock.lock()
-            AF.request(
+            self.session.request(
                 self.eventAPI,
                 method: .post,
                 parameters: parameters,
