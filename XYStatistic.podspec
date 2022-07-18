@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'XYStatistic'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'XY Statistic'
 
   s.description      = <<-DESC
@@ -19,6 +19,6 @@ Pod::Spec.new do |s|
   s.frameworks = 'Foundation'
   s.source_files = 'XYStatistic/**/*'
   
-  s.dependency 'SWFrame/Core', '2.1.3'
+  s.dependency 'SWFrame/Core', '2.1.4'
   s.dependency "Alamofire", "~> 5.0"
 end
